@@ -5,7 +5,7 @@ $backupPath = "C:\Backup\ChromeBookmarks"
 # Backup Bookmarks
 $defaultProfilePath = Join-Path -Path $userDataPath -ChildPath "Default"
 $bookmarksFile = Join-Path -Path $defaultProfilePath -ChildPath "Bookmarks"
-$backupFile = Join-Path -Path $backupPath -ChildPath "Bookmarks.bak"
+$backupFile = Join-Path -Path $backupPath -ChildPath "Bookmarks.html"
 
 if (Test-Path -Path $bookmarksFile) {
     New-Item -Path $backupPath -ItemType Directory -Force
